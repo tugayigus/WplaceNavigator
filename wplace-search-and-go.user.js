@@ -20,10 +20,22 @@
     function waitForMenu() {
         return new Promise((resolve) => {
             const checkMenu = setInterval(() => {
-                const menu = document.querySelector('.z-30.top-2.right-2.absolute > .items-center.gap-4.flex-col.flex');
-                if (menu) {
-                    clearInterval(checkMenu);
-                    resolve(menu);
+                // Find any button in the right menu area and get its parent container
+                const anyMenuButton = document.querySelector('[class*="top-"][class*="right-"] button');
+                if (anyMenuButton) {
+                    // Get the flex container that holds all buttons
+                    let menuContainer = anyMenuButton.closest('[class*="flex-col"]');
+                    if (!menuContainer) {
+                        // If no flex-col found, try to find the parent that contains multiple buttons
+                        menuContainer = anyMenuButton.parentElement;
+                        while (menuContainer && menuContainer.querySelectorAll('button').length < 2) {
+                            menuContainer = menuContainer.parentElement;
+                        }
+                    }
+                    if (menuContainer) {
+                        clearInterval(checkMenu);
+                        resolve(menuContainer);
+                    }
                 }
             }, 100);
         });

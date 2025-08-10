@@ -13,24 +13,16 @@ A sleek location finder userscript that integrates seamlessly with [wplace.live]
 ## Installation
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) browser extension
-2. Click [here](https://github.com/yourusername/wplace-search/raw/main/wplace-search.user.js) to install the script
+2. Click [here](https://raw.githubusercontent.com/tugayigus/Wplace-Location-Search-and-GO-/refs/heads/main/wplace-search-and-go.user.js) to install the script
 3. Visit [wplace.live](https://wplace.live) - the search feature is ready to use!
 
 ## Usage
 
 1. Look for the **search icon** at the bottom of the top right corner, below the circular menu buttons
 2. Click the search icon to expand the search field
-3. Type any location (e.g., "Ankara Anıtkabir", "Times Square")
+3. Type any location (e.g., "Staples Center", "Times Square")
 4. Press Enter or wait for suggestions
 5. Click on a result to navigate instantly to that location
-
-## Screenshots
-
-![Search Button Location](screenshots/search-button.png)
-*Search icon integrated in the right-side menu*
-
-![Search in Action](screenshots/search-expanded.png)
-*Searching for a location*
 
 ## Keyboard Shortcuts
 
