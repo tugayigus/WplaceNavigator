@@ -13,7 +13,7 @@ A sleek location finder userscript that integrates seamlessly with [wplace.live]
 ## Installation
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) browser extension
-2. Click [here](https://raw.githubusercontent.com/tugayigus/Wplace-Location-Search-and-GO-/refs/heads/main/wplace-search-and-go.user.js) to install the script
+2. Click [here](https://github.com/tugayigus/WplaceNavigator/raw/refs/heads/main/wplace-search-and-go.user.js) to install the script
 3. Visit [wplace.live](https://wplace.live) - the search feature is ready to use!
 
 ## Usage
